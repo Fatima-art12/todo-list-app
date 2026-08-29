@@ -326,3 +326,39 @@ body {
     color: #4a3b3b;
     font-size: 20px;
 }
+
+body.dark-mode {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .app-card {
+    background-color: #2b2b2b;
+}
+
+body.dark-mode .header h1,
+body.dark-mode .title-small,
+body.dark-mode .task-text,
+body.dark-mode .calendar-view h2,
+body.dark-mode .stats-view h2,
+body.dark-mode .settings-view h2,
+body.dark-mode .stats-view p,
+body.dark-mode .settings-view label,
+body.dark-mode .profile-display h3,
+body.dark-mode .nav-item,
+body.dark-mode .filter-btn {
+    color: #f0e4dc;
+}
+
+body.dark-mode .add-task,
+body.dark-mode .filter-btn,
+body.dark-mode .task,
+body.dark-mode .bottom-nav,
+body.dark-mode .calendar-view,
+body.dark-mode .stats-view,
+body.dark-mode .settings-view {
+    background-color: #3a3a3a;
+}
+
+body.dark-mode .add-task input {
+    color: #f0e4dc;
+}
