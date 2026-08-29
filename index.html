@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-card">
+
+        <div class="header">
+            <button class="menu-btn" id="menuProfileBtn">
+                <span id="menuIcon">☰</span>
+                <img id="headerProfilePic" class="header-profile-pic" src="" alt="">
+            </button>
+            <div class="title-block">
+                <span class="title-small" id="greetingText">My</span>
+                <h1>To Do List</h1>
+            </div>
+            <div class="bear-decoration">
+                <span class="heart-icon">❤️</span>
+                <span class="sparkle sparkle1">✨</span>
+                <span class="sparkle sparkle2">✨</span>
+                <span class="bear-icon">🧸</span>
+            </div>
+        </div>
+
+        <div class="view tasks-view active-view">
+
+            <div class="add-task">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button id="addBtn">+</button>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Today</button>
+                <button class="filter-btn">⭐ Important</button>
+                <button class="filter-btn">✅ Completed</button>
+            </div>
+
+            <div class="task-list">
+            </div>
+
+        </div>
+
+        <div class="view calendar-view">
+            <h2>📅 Calendar</h2>
+            <p id="todayDate"></p>
+        </div>
+
+        <div class="view stats-view">
+            <h2>📊 Stats</h2>
+            <p>Total Tasks: <span id="totalCount">0</span></p>
+            <p>Completed: <span id="completedCount">0</span></p>
+            <p>Pending: <span id="pendingCount">0</span></p>
+            <p>Important: <span id="importantCount">0</span></p>
+        </div>
+
+        <div class="view settings-view">
+            <h2>⚙️ Settings</h2>
+
+            <div class="profile-section">
+                <img id="profilePicPreview" class="profile-pic" src="" alt="">
+                <input type="file" id="profilePicInput" accept="image/*">
+                <input type="text" id="profileNameInput" placeholder="Write your name">
+                <button id="saveProfileBtn">Save Profile</button>
+            </div>
+
+            <label class="dark-mode-label">
+                <input type="checkbox" id="darkModeToggle">
+                Dark Mode
+            </label>
+        </div>
+
+        <div class="view profile-view">
+            <h2>👤 Profile</h2>
+            <div class="profile-display">
+                <img id="bigProfilePic" class="big-profile-pic" src="" alt="">
+                <h3 id="bigProfileName">Guest</h3>
+            </div>
+        </div>
+
+        <div class="bottom-nav">
+            <div class="nav-item active" data-view="tasks-view">
+                <span class="nav-icon">📋</span>
+                <span class="nav-text">Tasks</span>
+            </div>
+            <div class="nav-item" data-view="calendar-view">
+                <span class="nav-icon">📅</span>
+                <span class="nav-text">Calendar</span>
+            </div>
+            <div class="nav-item center-btn" data-view="tasks-view">
+                <span class="nav-icon">🧸</span>
+            </div>
+            <div class="nav-item" data-view="stats-view">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </div>
+            <div class="nav-item" data-view="settings-view">
+                <span class="nav-icon">⚙️</span>
+                <span class="nav-text">Settings</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
